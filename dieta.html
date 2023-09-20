@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title>Dieta a zdrowe odżywianie</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Dokument hipertekstowy 2">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <link rel="stylesheet" href="artykuly.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC&subset=latin,latin-ext' rel='stylesheet'
+        type='text/css'>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136076771-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-136076771-1');
+    </script>
+
+</head>
+
+<body>
+    <div class="navcolumn">
+        <div class="picturelogo">
+            <a href="index.html"> <img class="logo" src="logo.png"
+                    alt="logo projektu OtyDość z przekreślonym niezdrowym jedzeniem">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona główna</a></li>
+
+                <li><a href="#" class="klik">Wpisy</a>
+                    <ul id="roz">
+
+                        <li><a href="artykuły.html">Artykuły</a></li>
+                        <li><a href="konkursy.html">Konkursy</a></li>
+                        <li><a href="przepisy.html">Przepisy</a></li>
+                    </ul>
+                </li>
+                <li><a id="lastnav" href="onas.html">O nas</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <div class="aboutart1">
+
+            <div class="abouttext">
+                <h2 class="title"> Dieta a zdrowe odżywianie</h2>
+            </div>
+        </div>
+        <div class="aboutp">
+            <p>Większość z nas używa tych terminów zamiennie, jednak dzisiaj pragniemy pokazać Wam, czym różnią się te
+                dwa sformułowania. Dieta odnosi się do jakości posiłków, ich zawartości i ilości kalorii, mówimy o tym,
+                w przypadku stosowania jakiejś kuracji mającej na celu redukcje masy ciała. Często słyszymy, że ktoś
+                odmawia zjedzenia czegoś mówiąc „jestem na diecie”, w tym przypadku traktujemy ją, jako pewien rodzaj
+                wyrzeczenia. Oczywiście bywa to uzasadnione, np. z powodu choroby, przyjmowanych leków, gzie lekarze
+                stawiają ograniczenia dla naszego dobra.</p>
+            <p>Zdrowe odżywianie wiąże się z pewnymi nawykami, których często uczymy się od najmłodszych lat. Zatem
+                zdrowe odżywianie to:
+                pełnowartościowa, zróżnicowana dieta, czyli skład posiłków
+                odpowiednia ilość posiłków, najlepiej 5
+                odstęp między ich spożywaniem około 3 godziny
+                stałe godziny zasiadania do posiłku
+                odpowienia ilość płynów – co najmniej 1,5 litra wody dziennie, przyjętych również jako zawartość
+                pokarmu
+                ostatni posiłek najpóźniej 2 godziny przed snem</p>
+            <p>WNIOSEK: Dieta to tylko cześć zdrowego odżywiania.</p>
+
+        </div>
+
+    </main>
+    <footer>
+        <p>Projekt OtyDość</p>
+    </footer>
+
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.anim', {
+            reset: true,
+            delay: 500,
+            distance: 0
+        });
+        sr.reveal('h2, p', {
+            reset: true,
+            delay: 200
+        });
+        $('.klik').click(function () { //po kliknięciu (Y) w miniaturę (X)
+            //pokaż powiększony obrazek
+            $('#roz').fadeToggle();
+            //zmień atrybut src dużego obrazka na wartość jakajest w src klikniętej miniatury
+        });
+    </script>
+</body>
+
+</html>

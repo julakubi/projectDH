@@ -1,0 +1,618 @@
+/* *
+{
+box-sizing: border-box;    
+}
+body
+{
+background-color: white;   
+width:100%;
+margin: 0 auto;
+margin-top:0; 
+margin-bottom:0; 
+
+}
+.navcolumn
+{
+    float:left;
+    background-color: white;
+    width:20%;
+    height: 100%;
+    background-attachment: fixed;
+    border-right: 3px solid #BDACA2;  
+    position: fixed;
+}
+
+.logo
+{
+    width:80%;
+    height:80%;
+    border-radius:50%;
+    /* border: 9px solid rgba(0, 0, 0, .5); */
+  /*  margin: 9%;
+    }
+
+
+ nav {
+    width: 80%;
+    
+   }
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+   }
+ nav li {
+    margin: 0 0 3px 0;
+   } 
+nav a {
+    height:1.25em;
+    line-height: 1.25;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    display: block;
+    text-decoration:none;
+    font-family: Arial, sans-serif;
+    border-top: 3px dotted #BDACA2;
+    margin-left: 20%;
+    text-align: center;
+    padding-top: 2%; 
+    padding-bottom: 12%;
+   }
+   #lastnav
+   {
+
+    padding-bottom: 13%;   
+    border-bottom: 3px dotted #BDACA2;
+   
+   }
+   nav a:hover {
+    color: #BDACA2;
+   }
+   main
+   {
+    float: right;
+    position: static;
+    border-right: 3px solid #BDACA2;  
+    width:80%;
+    height:100%;
+    margin:0;
+    padding: 0;
+   }
+   .about
+   { 
+       background-image: url("vegetablpic2.jpg");
+       height: 500px;
+       padding-top:10%;
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: cover;
+       background-attachment: fixed;
+       margin-top:0px; 
+       border-bottom: 30px solid rgb(129, 121, 117);
+   }
+   .abouttext
+   {  
+       margin-left:33%;
+       margin-right:33%; 
+       margin-top: 300px;
+          background-color:  #BDACA2;
+          background-size: 12em; 
+          background-repeat: no-repeat;
+          padding: 2em 1.2em;
+          text-align: center;
+}
+
+.description
+{
+    background-color: white;
+    width: 100%;    
+}
+.opis   
+{    
+float: left;
+margin:5%;
+width:40%;
+padding: 5%;
+}
+
+.gabapic
+   {
+
+    height: 1.25;
+    line-height: 1.25; 
+    float:left;
+    width: 40%;
+    padding-left:20%;
+    margin: 5%;
+    }
+ */
+ *
+{
+box-sizing: border-box;    
+}
+body
+{
+height: 100%;   
+background-color: white;   
+width:100%;
+margin: 0 auto;
+margin-top:0; 
+margin-bottom:0; 
+margin: 0;
+
+}
+
+p
+{
+    font-size: 100%;
+}
+h2
+{
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 250%; 
+}
+.navcolumn
+{
+    float:left;
+    background-color: white;
+    width:20%;
+    height: 100%;
+    background-attachment: fixed;
+    border-right: 3px solid #BDACA2;  
+    position: fixed;
+}
+
+.logo
+{
+    width:80%;
+    height:80%;
+    border-radius:50%;
+    /* border: 9px solid rgba(0, 0, 0, .5); */
+    margin:9%;
+    }
+
+
+#roz
+{
+display:none;
+}
+ nav {
+    width: 100%;  
+    
+   }
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+   }
+ nav li {
+    margin: 0 0 3px 0;
+   } 
+nav a {
+    height:1.25em;
+    line-height: 1.25;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    display: block;
+    text-decoration:none;
+    font-family: Arial, sans-serif;
+    border-top: 3px dotted #BDACA2;
+    text-align: center;
+    padding-top: 2%; 
+    padding-bottom: 12%;
+     width: 100%;
+   
+    }
+   #lastnav
+   {
+
+    padding-bottom: 13%;   
+    border-bottom: 3px dotted #BDACA2;
+   
+   }
+   nav a:hover {
+    color: #BDACA2;
+   }
+   main
+   {
+    float: right;
+    position: static;
+    border-right: 3px solid #BDACA2;  
+    width:80%;
+    height:100%;
+    margin: 0;
+   }
+  
+   .opisleft
+   {
+      float: left;
+      width: 50%;
+      margin: 5%;
+     height: 100%;
+   }
+   .opisrighttop
+   {
+   float: right;
+   width: 50%;
+   margin:5%;
+   max-height: 100%;
+   }
+   .opisrighttop h3
+   {
+     
+    margin: 3%;
+    margin-left:0%;  
+    margin-top:40%; 
+    max-height: 100%;
+   }
+   .opisright
+   {
+   float: right;
+   width: 50%;
+   margin:5%;
+   height: 100%;
+   }
+   .opisright h3
+   {
+     
+    margin: 3%;
+    margin-left:0%;  
+    margin-top:30%; 
+    max-height: 100%;
+   }
+   .opisleft h3
+   {
+      margin: 3%;
+      margin-left:0%;  
+      margin-top:30%; 
+   }
+   
+ 
+img.rightpic
+{
+   width: 35%;
+   margin: 5%;
+   margin-right:0%; 
+
+   vertical-align: middle;
+   max-height: 100%;
+}
+img.rightpictop
+{
+   width: 35%;
+   margin: 5%;
+   margin-right:0%; 
+   margin-top: 10%;
+   vertical-align: middle;
+   max-height: 100%;
+}
+img.leftpic
+{ width: 35%;
+margin:5%;
+margin-left:0%;
+vertical-align: middle;
+max-height: 100%;
+}
+.about
+{ 
+    background-image: url("teamwork.jpg");
+    min-height: 500px;
+    padding-top:10%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top:0px; 
+    border-bottom: 30px solid rgb(129, 121, 117);
+}
+.abouttext
+{  
+    margin-left:33%;
+    margin-right:33%; 
+    margin-top: 50px;
+    background-color:  rgba(189, 172, 162, 0.8);
+       background-size: 12em; 
+       background-repeat: no-repeat;
+       padding: 2em 1.2em;
+       text-align: center;
+    
+     
+            
+ /* background: #58a;
+ background:
+            radial-gradient(circle at top left,
+            transparent 15px, #58a 0) top left,
+            radial-gradient(circle at top right,
+            transparent 15px, #58a 0) top right,
+            radial-gradient(circle at bottom right,
+            transparent 15px, #58a 0) bottom right,
+            radial-gradient(circle at bottom left,
+            transparent 15px, #58a 0) bottom left;
+    background-size: 50% 50%;
+    background-repeat: no repeat;
+*/
+
+}
+.whereweare
+{ 
+   clear: both;
+    background-image: url(data.jpg);
+    height: 500px;
+    padding-top:10%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top:0px; 
+
+    
+}
+.aboutwhere
+{  
+    margin-left:33%;
+    margin-right:33%; 
+    margin-top: 300px;
+       background-color:  #BDACA2;
+       background-size: 12em; 
+       background-repeat: no-repeat;
+       padding: 2em 1.2em;
+       text-align: center;
+}
+.zwt
+{  clear: both;
+    background-image: url(aboutproject.jpg);
+    height: 500px;
+    padding-top:10%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top:0px; 
+ 
+    
+}
+.aboutzwt
+{  
+    margin-left:33%;
+    margin-right:33%; 
+    margin-top: 300px;
+       background-color:  #BDACA2;
+       background-size: 12em; 
+       background-repeat: no-repeat;
+       padding: 2em 1.2em;
+       text-align: center;
+}
+
+footer
+{  
+    width:80%;
+    margin-left:20%;
+    clear: both;
+    padding-top:1%;
+    padding-bottom:1%;
+    background-color:black;
+    border-right: 3px solid #BDACA2; 
+    text-align: center;
+    color: white;
+    font-size:120%; 
+    
+}
+
+   @media all and (max-width: 800px) {
+    
+      nav {
+          width: 100%;
+          margin-left: 0%;
+     
+     display:block;
+     width:100%;  
+         }
+      nav ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+      
+         }
+       nav li {
+          margin: 0 0 3px 0;
+         } 
+      nav a {
+          height: 3.5em;
+          line-height: 3.5;
+          display: block;
+          border-top: 3px dotted #BDACA2;
+        
+          padding-top: 1%; 
+          padding-bottom: 10%;
+         }
+  .navcolumn
+  {
+   display:block;
+   position: static;
+  width:100%;
+  border-right: none;
+  background-color: white;
+  height: 100%;
+  background-attachment: fixed;
+   
+  
+   }
+   #lastnav
+   {
+  
+    padding-bottom: 10%;   
+    border-bottom: 3px dotted #BDACA2;
+   }
+  .logo
+  {
+  padding-left: 2%; 
+  }    
+  
+  
+  main {
+     
+  display:block;
+  width:100%;
+  border:none;
+  }
+  .opisleft
+   {
+      float: none;
+      width: 90%;
+      margin: 5%;
+     height: 100%;
+   }
+   .opisrighttop
+   {
+   float: none;
+   width: 90%;
+   margin:5%;
+   max-height: 100%;
+   }
+   .opisrighttop h3
+   {
+   text-align: center;
+    margin: 5%;
+    width: 90%;
+    max-height: 100%;
+   }
+   .opisright
+   {
+   float: none;
+   width: 90%;
+   margin:5%;
+   height: 100%;
+   }
+   .opisright h3
+   {
+   text-align: center;  
+    margin: 5%;
+    width: 90%;
+    max-height: 100%;
+   }
+   .opisleft h3
+   {
+      text-align: center;  
+      margin: 5%;
+      width: 90%;
+   }
+   img.rightpic, img.rightpictop, img.leftpic{
+     display: none;
+  }
+  footer 
+{
+    margin-left: 0%;
+    width:100%;
+    border:none;
+}
+   }
+  @media all and (max-width: 500px) {
+      nav {
+          width: 100%;
+     display:block;
+      width:100%;  
+      margin:0%
+         }
+      nav ul {
+          width: 100%;
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+      margin:0%
+         }
+       nav li {
+          margin: 0 0 3px 0;
+         } 
+      nav a {
+          width: 100%;
+          height:1.25em;
+          line-height: 1.25;
+          display: block;
+          border-top: 3px dotted #BDACA2;
+       margin:0%;
+          padding-top: 2%; 
+          padding-bottom: 8%;
+         }
+         #lastnav
+         {
+        
+          padding-bottom: 8.5%;   
+          border-bottom: 3px dotted #BDACA2;
+         }
+  .navcolumn
+  {
+   display:block;
+   position: static;
+  width:100%;
+  border-right: none;
+  background-color: white;
+  height: 100%;
+  background-attachment: fixed;
+  margin:0% 
+  
+   }
+  .logo
+  {
+  padding-left: 2%; 
+  }    
+  
+  
+  main {
+     
+  display:block;
+  width:100%;
+  border:none;
+  }
+  h2.title{
+      border: none;
+  }
+.about
+  {
+     margin-bottom: -60%;
+     max-height:50px; 
+  background: none;
+  border:none;
+  }
+  .abouttext
+  {
+      display: block;
+  margin-top:-5%;
+  margin: 0%; 
+  border-bottom: 15px solid rgb(129, 121, 117);
+  border-top: 15px solid rgb(129, 121, 117);  
+  background: none;
+  background-color:  #BDACA2;
+  width:100%;
+  
+  }
+  
+  .aboutp
+  {
+      padding-top:20%;   
+  }
+  .about
+  {
+    margin-bottom: -50%;
+  }
+  .opisrighttop
+  {
+ 
+  float: none;
+  width: 90%;
+  
+  margin:5%;
+  margin-top:0%; 
+  max-height: 100%;
+
+  }
+  
+  
+  }
+  
+  
+  
+  

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title> Jak mówić o chorobie i podchodzić do chorych na otyłość?</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Dokument hipertekstowy 2">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <link rel="stylesheet" href="artykuly.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC&subset=latin,latin-ext' rel='stylesheet'
+        type='text/css'>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136076771-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-136076771-1');
+    </script>
+
+</head>
+
+<body>
+    <div class="navcolumn">
+        <div class="picturelogo">
+            <a href="index.html"> <img class="logo" src="logo.png"
+                    alt="logo projektu OtyDość z przekreślonym niezdrowym jedzeniem">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona główna</a></li>
+
+                <li><a href="#" class="klik">Wpisy</a>
+                    <ul id="roz">
+
+                        <li><a href="artykuły.html">Artykuły</a></li>
+                        <li><a href="konkursy.html">Konkursy</a></li>
+                        <li><a href="przepisy.html">Przepisy</a></li>
+                    </ul>
+                </li>
+                <li><a id="lastnav" href="onas.html">O nas</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <div class="aboutart3">
+
+            <div class="abouttext">
+                <h2 class="title"> Jak mówić o chorobie i podchodzić do chorych na otyłość?</h2>
+            </div>
+        </div>
+        <div class="aboutp">
+
+            <p>Zmień swoje słownictwo i nie stygmatyzuj, ale spraw by chorzy dobrze się czuli w Twoim towarzystwie!
+                Mów:
+                choroba otyłości,
+                leczenie (profilaktyka, diagnostyka, rehabilitacja) choroby otyłości,
+                osoba z nadwagą/otyłością,
+                osoba chora na nadwagę/otyłość,
+                osoba chora na otyłość I,II, III stopnia,
+                osoba chora na otyłość tzw. olbrzymią,
+                dopuszczalne – osoba gruba (cecha sylwetki: tak jak szczupła, wysoka, niska),
+                tkanka tłuszczowa,
+                redukcja masy ciała/redukcja tkanki tłuszczowej.</p>
+
+            <p>Osoba chora na nadwagę/otyłość to NORMALNY człowiek, dlatego pozbądź się uprzedzeń, nie osądzaj, nie wiń
+                za
+                otyłość. W rozmowie nie potrzebne są aluzje ani komentarze dotyczące wyglądu, rozmawiaj normalnie, bez
+                skrępowania ani litości, przesada w żadną stronę nie prowadzi do niczego pozytywnego. Pozbądź się
+                spojrzeń
+                dezaprobaty, uśmiechnij się i życz dobrego dnia, to dużo lepsze niż odwracanie wzroku czy krzywienie
+                się na
+                czyjś widok, takie zachowanie wcale nie zachęca do kontaktu z ludźmi i podjęcia leczenia.</p>
+
+        </div>
+
+    </main>
+    <footer>
+        <p>Projekt OtyDość</p>
+    </footer>
+
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.anim', {
+            reset: true,
+            delay: 500,
+            distance: 0
+        });
+        sr.reveal('h2, p', {
+            reset: true,
+            delay: 200
+        });
+        $('.klik').click(function () { //po kliknięciu (Y) w miniaturę (X)
+            //pokaż powiększony obrazek
+            $('#roz').fadeToggle();
+            //zmień atrybut src dużego obrazka na wartość jakajest w src klikniętej miniatury
+        });
+    </script>
+</body>
+
+</html>

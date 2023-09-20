@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title>Cholesterol </title>
+    <meta charset="utf-8">
+    <meta name="description" content="Dokument hipertekstowy 2">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <link rel="stylesheet" href="artykuly.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC&subset=latin,latin-ext' rel='stylesheet'
+        type='text/css'>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136076771-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-136076771-1');
+    </script>
+
+</head>
+
+<body>
+    <div class="navcolumn">
+        <div class="picturelogo">
+            <a href="index.html"> <img class="logo" src="logo.png"
+                    alt="logo projektu OtyDość z przekreślonym niezdrowym jedzeniem">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona główna</a></li>
+
+                <li><a href="#" class="klik">Wpisy</a>
+                    <ul id="roz">
+
+                        <li><a href="artykuły.html">Artykuły</a></li>
+                        <li><a href="konkursy.html">Konkursy</a></li>
+                        <li><a href="przepisy.html">Przepisy</a></li>
+                    </ul>
+                </li>
+                <li><a id="lastnav" href="onas.html">O nas</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <div class="aboutart2">
+
+            <div class="abouttext">
+                <h2 class="title"> Cholesterol </h2>
+            </div>
+        </div>
+        <div class="aboutp">
+            <p> Po pierwsze w naszym organizmie występuje w dwóch postaciach, jedna z nich (LDL) jest nazywana tą
+                „złą”, a HDL „dobrą”, które razem stanowią cholesterol całkowity. Nasz organizm nie może prawidłowo
+                funkcjonować, gdy ilość KAŻDEGO z nich jest nieodpowiednia. Dostarczamy go spożywając takie pokarmy jak
+                tłuste mięsa i wędliny, tłuste przetwory mleczne (różnego rodzaju sery), fast foody, konserwy, smażone
+                przysmaki, np. pączki, niektóre oleje roślinne.</p>
+            <p>HDL jest odpowiedzialny za wiązanie wolnego cholesterolu i przenoszenie go do wątroby. Tam zostaje
+                zmagazynowany, przekształcany lub wydalany z żółcią, niezbędną do trawienia. Zatem zapobiega chorobom
+                układu krwionośnego. </p>
+            <p> LDL transportuje cholesterol z wątroby do komórek, które pobierają go, tyle ile potrzebują, np. do
+                budowania swojej błony, osłonek mielinowych chroniących nerwy przed uszkodzeniem i wytwarzania hormonów
+                (dlatego gdy go brakuje zanika miesiączka, co świadczy o za małej dostawie tłuszczów). Jednak
+                niewykorzystany może odkładać się w ścianach naczyń krwionośnych, co zmniejsza ich światło i prowadzi
+                do tworzenia się blaszek miażdżycowych. Zjawisko to jest szczególnie niebezpieczne w tętnicach
+                wieńcowych (dostarczających ten do serca) jak i tętnicach szyjnych, bo może prowadzić odpowiednio do
+                zawału serca i udaru mózgu.</p>
+            <p> Podwyższony poziom cholesterolu długo nie daje żadnych objawów, dlatego warto mieć go pod kontrolą
+                wykonując badania profilaktyczne. </p>
+            <p> Pamiętajcie, że zarówno HDL i LDL są niezbędne do funkcjonowania i w odpowiednich ilościach są naszymi
+                przyjaciółmi.</p>
+        </div>
+
+    </main>
+    <footer>
+        <p>Projekt OtyDość</p>
+    </footer>
+
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.anim', {
+            reset: true,
+            delay: 500,
+            distance: 0
+        });
+        sr.reveal('h2, p', {
+            reset: true,
+            delay: 200
+        });
+        $('.klik').click(function () { //po kliknięciu (Y) w miniaturę (X)
+            //pokaż powiększony obrazek
+            $('#roz').fadeToggle();
+            //zmień atrybut src dużego obrazka na wartość jakajest w src klikniętej miniatury
+        });
+    </script>
+</body>
+
+</html>

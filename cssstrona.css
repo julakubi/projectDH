@@ -1,0 +1,610 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 0;
+
+
+}
+
+p {
+    font-size: 70%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 250%;
+}
+
+h2 {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 250%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navcolumn {
+    float: left;
+    background-color: white;
+    width: 20%;
+    height: 100%;
+    background-attachment: fixed;
+    border-right: 3px solid #BDACA2;
+    position: fixed;
+}
+
+.logo {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    /* border: 9px solid rgba(0, 0, 0, .5); */
+    margin: 9%;
+}
+
+
+#roz {
+    display: none;
+}
+
+nav {
+    width: 100%;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+nav li {
+    margin: 0 0 3px 0;
+}
+
+nav a {
+    text-decoration-line: none;
+    height: 1.25em;
+    line-height: 1.25;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    border-top: 3px dotted #BDACA2;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 12%;
+    width: 100%;
+}
+
+#lastnav {
+
+    padding-bottom: 13%;
+    border-bottom: 3px dotted #BDACA2;
+
+}
+
+nav a:hover {
+    color: #BDACA2;
+    text-decoration: none;
+}
+
+main {
+    float: right;
+    position: static;
+    border-right: 3px solid #BDACA2;
+    width: 80%;
+    height: 100%;
+}
+
+.calyopispr {
+    width: 100%;
+    height: 510px;
+    max-height: 1000px;
+    border: 5px solid #BDACA2;
+    border-left: 2px solid #BDACA2;
+    border-right: 2px solid #BDACA2;
+    padding: 7%;
+    font-size: 200%;
+    text-align: left;
+    background: white;
+
+}
+
+
+
+.calyopispr p {
+
+    color: #212121;
+    text-align: left;
+}
+
+
+
+
+
+.content {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+
+    height: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.content h2 {
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Amatic SC', sans-serif;
+
+    width: 80%;
+    font-family: 'Amatic SC', sans-serif;
+    font-weight: 100;
+
+
+    text-align: center;
+    color: black;
+    font-size: 120px;
+    padding: 7%;
+    background-color: rgba(189, 172, 162, 0.9);
+    border: 3px solid black;
+
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.content:hover .image {
+    opacity: 0.3;
+}
+
+.content:hover .middle {
+    opacity: 1;
+}
+
+.content:hover h2 {
+    opacity: 0;
+}
+
+.text {
+    padding: 50px;
+
+    font-size: 200px;
+    width: 500px;
+    text-align: center;
+    background: rgba(33, 33, 33, 0.8);
+
+}
+
+
+.fa:hover {
+    font-size: 230px;
+    color: white;
+}
+
+.fa-facebook {
+
+    color: white;
+}
+
+
+.fa-instagram {
+
+    color: white;
+}
+
+
+.aboutproject {
+    clear: both;
+    background-image: url("vegetablpic2.jpg");
+    opacity: 1;
+    height: 720px;
+    padding-top: 10%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 0px;
+
+
+}
+
+h1.title {
+    display: inline-block;
+    width: 80%;
+    font-family: 'Amatic SC', sans-serif;
+    font-weight: 100;
+
+    margin-left: 10%;
+    text-align: center;
+    color: black;
+    font-size: 120px;
+    padding: 7%;
+    background-color: rgba(189, 172, 162, 0.9);
+    border: 3px solid black;
+
+}
+
+h2.title {
+    display: inline-block;
+    width: 80%;
+    font-family: 'Amatic SC', sans-serif;
+    font-weight: 100;
+
+    margin-left: 10%;
+    text-align: center;
+    color: black;
+    font-size: 120px;
+    padding: 7%;
+    background-color: rgba(189, 172, 162, 0.9);
+    border: 3px solid black;
+
+}
+
+.aboutarticle {
+    clear: both;
+    background-image: url("article.jpg");
+    opacity: 1;
+    height: 400px;
+    padding-top: 10%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 0px;
+
+
+}
+
+.aboutarticletext {
+    margin-top: -8%;
+}
+
+.about {
+    clear: both;
+    background-image: url("foodmainpicc.jpg");
+    height: 500px;
+    padding-top: 10%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 0px;
+    border-bottom: 30px solid rgb(129, 121, 117);
+}
+
+.abouttext {
+    margin-left: 33%;
+    margin-right: 33%;
+    margin-top: 300px;
+    background-color: #BDACA2;
+    background-size: 12em;
+    background-repeat: no-repeat;
+    padding: 2em 1.2em;
+    text-align: center;
+
+
+
+    /* background: #58a;
+ background:
+            radial-gradient(circle at top left,
+            transparent 15px, #58a 0) top left,
+            radial-gradient(circle at top right,
+            transparent 15px, #58a 0) top right,
+            radial-gradient(circle at bottom right,
+            transparent 15px, #58a 0) bottom right,
+            radial-gradient(circle at bottom left,
+            transparent 15px, #58a 0) bottom left;
+    background-size: 50% 50%;
+    background-repeat: no repeat;
+*/
+
+}
+
+.aboutp {
+    margin: 15% 12% 15% 12%;
+    font-size: 200%;
+    text-align: left;
+
+}
+
+.whereweare {
+    background-image: url(colorfoodpic2.jpg);
+    height: 500px;
+    padding-top: 10%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 0px;
+    border-bottom: 30px solid rgb(129, 121, 117);
+
+}
+
+.aboutwhere {
+    margin-left: 33%;
+    margin-right: 33%;
+    margin-top: 300px;
+    background-color: #BDACA2;
+    background-size: 12em;
+    background-repeat: no-repeat;
+    padding: 2em 1.2em;
+    text-align: center;
+}
+
+.zwt {
+    background-image: url(paprpic.jpg);
+    height: 500px;
+    padding-top: 10%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 0px;
+    border-bottom: 30px solid rgb(129, 121, 117);
+
+}
+
+.aboutzwt {
+    margin-left: 33%;
+    margin-right: 33%;
+    margin-top: 300px;
+    background-color: #BDACA2;
+    background-size: 12em;
+    background-repeat: no-repeat;
+    padding: 2em 1.2em;
+    text-align: center;
+}
+
+footer {
+    width: 80%;
+    margin-left: 20%;
+    clear: both;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: black;
+    border-right: 3px solid #BDACA2;
+    text-align: center;
+    color: white;
+    font-size: 190%;
+
+
+}
+
+@media all and (max-width: 800px) {
+
+    nav {
+        width: 100%;
+        margin-left: 0%;
+
+        display: block;
+        width: 100%;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    nav li {
+        margin: 0 0 3px 0;
+    }
+
+    nav a {
+        height: 3.5em;
+        line-height: 3.5;
+        display: block;
+        border-top: 3px dotted #BDACA2;
+
+        padding-top: 1%;
+        padding-bottom: 10%;
+    }
+
+    .navcolumn {
+        display: block;
+        position: static;
+        width: 100%;
+        border-right: none;
+        background-color: white;
+        height: 100%;
+        background-attachment: fixed;
+
+
+    }
+
+    #lastnav {
+
+        padding-bottom: 10%;
+        border-bottom: 3px dotted #BDACA2;
+    }
+
+    .logo {
+        padding-left: 2%;
+    }
+
+
+    main {
+
+        display: block;
+        width: 100%;
+        border: none;
+    }
+
+    .text {
+        padding: 5%;
+
+        font-size: 100px;
+        width: 90%;
+        text-align: center;
+        background: rgba(33, 33, 33, 0.8);
+    }
+
+    .fa:hover {
+        font-size: 150px;
+        color: white;
+    }
+
+    footer {
+        margin-left: 0%;
+        width: 100%;
+        border: none;
+    }
+}
+
+@media all and (max-width: 500px) {
+    nav {
+        width: 100%;
+        display: block;
+        width: 100%;
+        margin: 0%
+    }
+
+    nav ul {
+        width: 100%;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        margin: 0%
+    }
+
+    nav li {
+        margin: 0 0 3px 0;
+    }
+
+    nav a {
+        width: 100%;
+        height: 1.25em;
+        line-height: 1.25;
+        display: block;
+        border-top: 3px dotted #BDACA2;
+        margin: 0%;
+        padding-top: 2%;
+        padding-top: 2%;
+        padding-bottom: 8%;
+    }
+
+    .text {
+        padding: 5%;
+
+        font-size: 100px;
+        width: 90%;
+        text-align: center;
+        background: rgba(33, 33, 33, 0.8);
+
+    }
+
+    .fa:hover {
+        font-size: 150px;
+        color: white;
+    }
+
+    .navcolumn {
+        display: block;
+        position: static;
+        width: 100%;
+        border-right: none;
+        background-color: white;
+        height: 100%;
+        background-attachment: fixed;
+        margin: 0%
+    }
+
+    #lastnav {
+
+        padding-bottom: 8.5%;
+        border-bottom: 3px dotted #BDACA2;
+    }
+
+    .logo {
+        padding-left: 2%;
+    }
+
+
+    main {
+
+        display: block;
+        width: 100%;
+        border: none;
+    }
+
+    h1.title {
+        border: none;
+    }
+
+    h2.title {
+        border: none;
+    }
+
+    .whereweare,
+    .zwt,
+    .about,
+    .aboutarticle,
+    .aboutproject {
+        background: none;
+        height: 150px;
+        border: none;
+    }
+
+    .abouttext,
+    .aboutzwt,
+    .aboutwhere,
+    .aboutarticletext,
+    .abouthead {
+        display: block;
+        margin-top: -5%;
+        margin: 0%;
+
+        border-bottom: 15px solid rgb(129, 121, 117);
+        border-top: 15px solid rgb(129, 121, 117);
+        background: none;
+        background-color: #BDACA2;
+        width: 100%;
+
+    }
+
+    .aboutp {
+        padding-top: 35%;
+    }
+
+    .head {
+        padding-top: 65%;
+    }
+
+    .socialmed {
+        padding-top: 0%;
+    }
+
+
+}

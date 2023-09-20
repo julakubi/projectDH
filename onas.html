@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title>O nas</title>
+    <meta charset="utf-8">
+
+    <meta name="description" content="Dokument hipertekstowy 2">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <link rel="stylesheet" href="onascsstxt.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC&subset=latin,latin-ext' rel='stylesheet'
+        type='text/css'>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136076771-1"></script>
+</head>
+
+<body>
+    <div class="navcolumn">
+        <div class="picturelogo">
+            <a href="index.html"> <img class="logo" src="logo.png"
+                    alt="logo projektu OtyDość z przekreślonym niezdrowym jedzeniem">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona główna</a></li>
+
+                <li><a class="klik">Wpisy</a>
+                    <ul id="roz">
+
+                        <li><a href="artykuły.html">Artykuły</a></li>
+                        <li><a href="konkursy.html">Konkursy</a></li>
+                        <li><a href="przepisy.html">Przepisy</a></li>
+
+                    </ul>
+                </li>
+                <li><a id="lastnav" href="onas.html">O nas</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <div class="about">
+            <div class="abouttext">
+                <h2 id="title"> O nas </h2>
+            </div>
+
+        </div>
+
+        <img class="rightpictop anim" src="gaba.jpg" alt="Na obrazku znajduje się Gabriela Jarczyk w stroju baletnicy">
+
+        <div class="opisrighttop">
+            <h3>Gabriela Jarczyk</h3>
+            <p class="righttop">
+
+                Gabriela Jarczyk to zakręcona, pozytywna, energiczna i wiecznie uśmiechnięta dziewczyna! Uczy się na
+                profilu bio-chem-mat w klasie dwujęzycznej z językiem angielskim! Od kilku lat jest uczennicą Szkoły
+                Baletowej Centrum Sztuki Tańca w Krakowie! Tam rozwija swoje umiejętności i wiedzę z zakresu tańca
+                klasycznego i współczesnego. Jej pasją są również języki obce: angielski, francuski i nawet węgierski!
+                Uwielbia aktywnie spędzać czas, podróżować i motywować innych do działania. Swoim entuzjazmem potrafi
+                zarażać wszystkich dookoła nawet tych najbardziej opornych!
+            </p>
+        </div>
+
+        <div class="whereweare"></div>
+
+        <div class="opisleft">
+            <h3>Kacper Suder</h3>
+            <p class="left">
+
+                Licealista uczęszczający do II klasy o profilu matematyczno-fizyczno-informatycznym z rozszerzonym
+                dodatkowo językiem angielskim! Uwielbia projekty, dlatego drugi raz z rzędu realizuje projekt społeczny
+                na platformie "Zwolnieni z Teorii".
+                W zeszyłym roku wraz z projektem "no_elo" udało mu się zdobyć srebrnego i brązowego wilka. Dzięki
+                zdobytej w zeszłym roku wiedzy, o działalności platformy, pomaga całemu projektowi dotrzymać wszystkich
+                terminów! Jest też współtwócą kanału na YouTube Okiem Gracza.
+                Jego zainteresowania to głównie informatyka i programowanie.
+                Kacper to ambitny i zdolny człowiek, który świetnie dogaduje się z dwójką kobiet w naszym projekcie,
+                mimo, że czasem trudno je przegadać!
+            </p>
+        </div>
+
+        <img class="leftpic anim" src="kacper.jpg" alt="Na obrazku znajduje się selfie Kacpra">
+        <div class="zwt">
+
+        </div>
+
+        <img class="rightpic anim" src="julka.jpg" alt="Na obrazku znajduje się Julia Jarczyk na tle lasu">
+        <div class="opisright">
+            <h3>Julia Jarczyk</h3>
+            <p class="right">
+
+                To ambitna i niezmiernie utalentowana studentka 1 roku analityki medycznej na Uniwersytecie
+                Jagiellońskim. W liceum była na profilu biologiczno-chemiczno-matematycznym, a zdobytą i stale
+                poszerzaną wiedzę stara się maksymalnie wykorzystywać tworząc projekt „OtyDość”. Wygrała również
+                konkurs wiedzy pt. "Metabolizm". Na codzień jest otwartą osobą chętną do pomocy innym i świetną
+                korepetytorką z chemii!
+            </p>
+        </div>
+
+    </main>
+    <footer>
+        <p>Projekt OtyDość</p>
+    </footer>
+
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.anim', {
+            reset: true,
+            delay: 500,
+            distance: 0
+        });
+        sr.reveal('h2, h3, p', {
+            reset: true,
+            delay: 200
+        });
+        $('.klik').click(function () { //po kliknięciu (Y) w miniaturę (X)
+            //pokaż powiększony obrazek
+            $('#roz').fadeToggle();
+            //zmień atrybut src dużego obrazka na wartość jakajest w src klikniętej miniatury
+        });
+    </script>
+</body>
+
+</html>

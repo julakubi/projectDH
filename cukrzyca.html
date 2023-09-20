@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title>Cukrzyca typu drugiego </title>
+    <meta charset="utf-8">
+    <meta name="description" content="Dokument hipertekstowy 2">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <link rel="stylesheet" href="artykuly.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC&subset=latin,latin-ext' rel='stylesheet'
+        type='text/css'>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136076771-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-136076771-1');
+    </script>
+
+</head>
+
+<body>
+    <div class="navcolumn">
+        <div class="picturelogo">
+            <a href="index.html"> <img class="logo" src="logo.png"
+                    alt="logo projektu OtyDość z przekreślonym niezdrowym jedzeniem">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona główna</a></li>
+
+                <li><a href="#" class="klik">Wpisy</a>
+                    <ul id="roz">
+
+                        <li><a href="artykuły.html">Artykuły</a></li>
+                        <li><a href="konkursy.html">Konkursy</a></li>
+                        <li><a href="przepisy.html">Przepisy</a></li>
+                    </ul>
+                </li>
+                <li><a id="lastnav" href="onas.html">O nas</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <div class="aboutart8">
+
+            <div class="abouttext">
+                <h2 class="title"> Cukrzyca typu drugiego </h2>
+            </div>
+        </div>
+        <div class="aboutp">
+            <p>Cukrzyca typu drugiego, nazywana cukrzycą dorosłych, występuje u coraz młodszych pacjentów. Dzieje się
+                tak, ponieważ coraz więcej młodych osób choruje na otyłość oraz nie jest aktywna fizycznie. Skłonności
+                do zachorowania są dziedziczne, jeśli jednak występuje choroba otyłości to dużo łatwiej o nabycie
+                odporności na insulinę, która ma zmniejszać zawartość glukozy we krwi. Czynnikami sprzyjającymi
+                ujawnieniu się tego rodzaju cukrzycą są m.in.: siedzący tryb życia, niezdrowa dieta, wcześniejsze
+                występowanie nieprawidłowości w wynikach badań cukru (glikemii), choroby trzustki, nadciśnienie
+                tętnicze. Objawy pojawiają się stopniowo, a są to: nadmierne pragnienie, oddawanie dużej ilości moczu,
+                ogólne osłabienie, nieuzasadniona utrata wagi oraz poziom glikemii na czczo przekraczający 125 mg/dl.
+            </p>
+            <p> Po stwierdzeniu choroby najważniejsza jest współpraca z lekarzem, który ustali odpowiednie leczenie w
+                zależności od występujących poziomów glukozy. Czasem, po unormowaniu glikemii, można odstawić leki.
+                Regularne badanie poziomu cukru jest podstawą diagnostyki i terapii, pozwala określić jak różne
+                czynniki wpływają na poziom glukozy i w jaki sposób reagować w określonej sytuacji. </p>
+
+        </div>
+
+    </main>
+    <footer>
+        <p>Projekt OtyDość</p>
+    </footer>
+
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.anim', {
+            reset: true,
+            delay: 500,
+            distance: 0
+        });
+        sr.reveal('h2, p', {
+            reset: true,
+            delay: 200
+        });
+        $('.klik').click(function () { //po kliknięciu (Y) w miniaturę (X)
+            //pokaż powiększony obrazek
+            $('#roz').fadeToggle();
+            //zmień atrybut src dużego obrazka na wartość jakajest w src klikniętej miniatury
+        });
+    </script>
+</body>
+
+</html>

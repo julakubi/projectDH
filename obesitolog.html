@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title>Obesitolog</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Dokument hipertekstowy 2">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <link rel="stylesheet" href="artykuly.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC&subset=latin,latin-ext' rel='stylesheet'
+        type='text/css'>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136076771-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-136076771-1');
+    </script>
+
+</head>
+
+<body>
+    <div class="navcolumn">
+        <div class="picturelogo">
+            <a href="index.html"> <img class="logo" src="logo.png"
+                    alt="logo projektu OtyDość z przekreślonym niezdrowym jedzeniem">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona główna</a></li>
+
+                <li><a href="#" class="klik">Wpisy</a>
+                    <ul id="roz">
+
+                        <li><a href="artykuły.html">Artykuły</a></li>
+                        <li><a href="konkursy.html">Konkursy</a></li>
+                        <li><a href="przepisy.html">Przepisy</a></li>
+                    </ul>
+                </li>
+                <li><a id="lastnav" href="onas.html">O nas</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <div class="aboutart7">
+
+            <div class="abouttext">
+                <h2 class="title"> Obesitolog</h2>
+            </div>
+        </div>
+        <div class="aboutp">
+            <p>Obesitolog to lekarz z certyfikatem profesjonalnego leczenia nadwagi i otyłości. Nazwa tej specjalizacji
+                pochodzi od angielskiego słowa obesity, oznaczającego otyłość, zatem obesitologia to dział medycyny
+                zajmujący się leczeniem nadwagi i otyłości.</p>
+            <p>Aby stać się takim specjalistą lekarz musi przejść szkolenie online i zaliczyć testy końcowe na minimum
+                80%. Obesitolog we współpracy z dietetykiem, fizjoterapeutą i psychologiem obejmie pacjenta rzetelnym
+                leczeniem i wsparciem w każdej dziedzinie życia. Przede wszystkim jednak pozwoli LECZYĆ nadwagę/
+                otyłość niezależnie od stopnia zaawansowania choroby, ale w pełnym znaczeniu tego słowa. Taki
+                specjalista nie odchudza ani nie proponuje diety cud i stara się doprowadzić, by leczenie chirurgiczne
+                nie było jedynym możliwym rozwiązaniem. </p>
+            <p>W Polsce od 2018 roku są już lekarze o tej specjalizacji, dlatego warto udać się właśnie do nich w celu
+                znalezienia fachowej pomocy.</p>
+
+        </div>
+
+    </main>
+    <footer>
+        <p>Projekt OtyDość</p>
+    </footer>
+
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.anim', {
+            reset: true,
+            delay: 500,
+            distance: 0
+        });
+        sr.reveal('h2, p', {
+            reset: true,
+            delay: 200
+        });
+        $('.klik').click(function () { //po kliknięciu (Y) w miniaturę (X)
+            //pokaż powiększony obrazek
+            $('#roz').fadeToggle();
+            //zmień atrybut src dużego obrazka na wartość jakajest w src klikniętej miniatury
+        });
+    </script>
+</body>
+
+</html>

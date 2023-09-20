@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title>Nadciśnienie tętnicze</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Dokument hipertekstowy 2">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <link rel="stylesheet" href="artykuly.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC&subset=latin,latin-ext' rel='stylesheet'
+        type='text/css'>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136076771-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-136076771-1');
+    </script>
+
+</head>
+
+<body>
+    <div class="navcolumn">
+        <div class="picturelogo">
+            <a href="index.html"> <img class="logo" src="logo.png"
+                    alt="logo projektu OtyDość z przekreślonym niezdrowym jedzeniem">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona główna</a></li>
+
+                <li><a href="#" class="klik">Wpisy</a>
+                    <ul id="roz">
+
+                        <li><a href="artykuły.html">Artykuły</a></li>
+                        <li><a href="konkursy.html">Konkursy</a></li>
+                        <li><a href="przepisy.html">Przepisy</a></li>
+                    </ul>
+                </li>
+                <li><a id="lastnav" href="onas.html">O nas</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <div class="aboutart6">
+
+            <div class="abouttext">
+                <h2 class="title"> Nadciśnienie tętnicze </h2>
+            </div>
+        </div>
+        <div class="aboutp">
+            <p> Nadciśnienie tętnicze – podwyższenie ciśnienia tętniczego krwi powyżej granic normy, można je
+                rozpoznać, jeśli średnia pomiarów ciśnienia tętniczego, z co najmniej dwóch pomiarów w różne dni są
+                wyższe lub równe 140 (skurczowe) i 90 (rozkurczowe). </p>
+            <p> Nadciśnienie tętnicze jest chorobą cywilizacyjną i jednym z czynników ryzyka przedwczesnej śmierci,
+                ponadto zwiększa ryzyko zachorowania na choroby układu krążenia –niewydolność serca, choroba tętnic
+                obwodowych, zawał serca, udar mózgu. Przez wiele lat może nie dawać żadnych objawów, dlatego tak ważna
+                jest profilaktyka. </p>
+            <p>>Gdy dojdzie do zachorowania, często leczenie polega na zmianie stylu życia poprzez: walkę z nadwagą i
+                otyłością, stosowanie diety z mniejszą ilością soli, regularna aktywność fizyczna, rzucenie palenia,
+                ograniczenie spożywania alkoholu, walkę ze stresem. Są to zarówno kroki, które warto podjąć, jako
+                profilaktykę i ustrzec się przed zachorowaniem na nadciśnienie tętnicze wtórne. Produktami o
+                największej zdolności do obniżania ciśnienia są owoce i warzywa. Czasem jednak potrzebne jest
+                wprowadzenie leczenia farmakologicznego, które trwa do końca życia pacjenta. </p>
+
+        </div>
+
+    </main>
+    <footer>
+        <p>Projekt OtyDość</p>
+    </footer>
+
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.anim', {
+            reset: true,
+            delay: 500,
+            distance: 0
+        });
+        sr.reveal('h2, p', {
+            reset: true,
+            delay: 200
+        });
+        $('.klik').click(function () { //po kliknięciu (Y) w miniaturę (X)
+            //pokaż powiększony obrazek
+            $('#roz').fadeToggle();
+            //zmień atrybut src dużego obrazka na wartość jakajest w src klikniętej miniatury
+        });
+    </script>
+</body>
+
+</html>

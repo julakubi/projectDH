@@ -1,0 +1,363 @@
+/* *
+{
+box-sizing: border-box;    
+}
+body
+{
+background-color: white;   
+width:100%;
+margin: 0 auto;
+margin-top:0; 
+margin-bottom:0; 
+
+}
+.navcolumn
+{
+    float:left;
+    background-color: white;
+    width:20%;
+    height: 100%;
+    background-attachment: fixed;
+    border-right: 3px solid #BDACA2;  
+    position: fixed;
+}
+
+.logo
+{
+    width:80%;
+    height:80%;
+    border-radius:50%;
+    /* border: 9px solid rgba(0, 0, 0, .5); */
+  /*  margin: 9%;
+    }
+
+
+ nav {
+    width: 80%;
+    
+   }
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+   }
+ nav li {
+    margin: 0 0 3px 0;
+   } 
+nav a {
+    height:1.25em;
+    line-height: 1.25;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    display: block;
+    text-decoration:none;
+    font-family: Arial, sans-serif;
+    border-top: 3px dotted #BDACA2;
+    margin-left: 20%;
+    text-align: center;
+    padding-top: 2%; 
+    padding-bottom: 12%;
+   }
+   #lastnav
+   {
+
+    padding-bottom: 13%;   
+    border-bottom: 3px dotted #BDACA2;
+   
+   }
+   nav a:hover {
+    color: #BDACA2;
+   }
+   main
+   {
+    float: right;
+    position: static;
+    border-right: 3px solid #BDACA2;  
+    width:80%;
+    height:100%;
+    margin:0;
+    padding: 0;
+   }
+   .about
+   { 
+       background-image: url("vegetablpic2.jpg");
+       height: 500px;
+       padding-top:10%;
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: cover;
+       background-attachment: fixed;
+       margin-top:0px; 
+       border-bottom: 30px solid rgb(129, 121, 117);
+   }
+   .abouttext
+   {  
+       margin-left:33%;
+       margin-right:33%; 
+       margin-top: 300px;
+          background-color:  #BDACA2;
+          background-size: 12em; 
+          background-repeat: no-repeat;
+          padding: 2em 1.2em;
+          text-align: center;
+}
+
+.description
+{
+    background-color: white;
+    width: 100%;    
+}
+.opis   
+{    
+float: left;
+margin:5%;
+width:40%;
+padding: 5%;
+}
+
+.gabapic
+   {
+
+    height: 1.25;
+    line-height: 1.25; 
+    float:left;
+    width: 40%;
+    padding-left:20%;
+    margin: 5%;
+    }
+ */
+ *
+{
+box-sizing: border-box;    
+}
+body
+{
+height: 100%;   
+background-color: white;   
+width:100%;
+margin: 0 auto;
+margin-top:0; 
+margin-bottom:0; 
+margin: 0;
+
+}
+p
+{
+    font-size: 70%;
+}
+h1, h2
+{
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 250%; 
+}
+.navcolumn
+{
+    float:left;
+    background-color: white;
+    width:20%;
+    height: 100%;
+    background-attachment: fixed;
+    border-right: 3px solid #BDACA2;  
+    position: fixed;
+}
+
+.logo
+{
+    width:80%;
+    height:80%;
+    border-radius:50%;
+    /* border: 9px solid rgba(0, 0, 0, .5); */
+    margin:9%;
+    }
+
+
+ nav {
+    width: 80%;
+    
+   }
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+   }
+ nav li {
+    margin: 0 0 3px 0;
+   } 
+nav a {
+    height:1.25em;
+    line-height: 1.25;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    display: block;
+    text-decoration:none;
+    font-family: Arial, sans-serif;
+    border-top: 3px dotted #BDACA2;
+    margin-left: 20%;
+    text-align: center;
+    padding-top: 2%; 
+    padding-bottom: 12%;
+   }
+   #lastnav
+   {
+
+    padding-bottom: 13%;   
+    border-bottom: 3px dotted #BDACA2;
+   
+   }
+   nav a:hover {
+    color: #BDACA2;
+   }
+   main
+   {
+    float: right;
+    position: static;
+    border-right: 3px solid #BDACA2;  
+    width:80%;
+    height:100%;
+    margin: 0;
+   }
+  
+
+.left
+{
+    float:left;
+    width:40%;
+   
+}
+.right
+{
+float: right;
+width:40%;
+}
+.righttop
+{
+float:left;
+width:40%;
+}
+img.rightpic
+{
+   width: 35%;
+   margin: 5%;
+   margin-right:0%; 
+
+   vertical-align: middle;
+}
+img.rightpictop
+{
+   width: 35%;
+   margin: 5%;
+   margin-right:0%; 
+   margin-top: 10%;
+   vertical-align: middle;
+}
+img.leftpic
+{ width: 35%;
+margin:5%;
+margin-left:0%;
+vertical-align: middle;
+}
+.about
+{ 
+    background-image: url("teamwork.jpg");
+    min-height: 500px;
+    padding-top:10%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top:0px; 
+    border-bottom: 30px solid rgb(129, 121, 117);
+}
+.abouttext
+{  
+    margin-left:33%;
+    margin-right:33%; 
+    margin-top: 50px;
+    background-color:  rgba(189, 172, 162, 0.8);
+       background-size: 12em; 
+       background-repeat: no-repeat;
+       padding: 2em 1.2em;
+       text-align: center;
+    
+     
+            
+ /* background: #58a;
+ background:
+            radial-gradient(circle at top left,
+            transparent 15px, #58a 0) top left,
+            radial-gradient(circle at top right,
+            transparent 15px, #58a 0) top right,
+            radial-gradient(circle at bottom right,
+            transparent 15px, #58a 0) bottom right,
+            radial-gradient(circle at bottom left,
+            transparent 15px, #58a 0) bottom left;
+    background-size: 50% 50%;
+    background-repeat: no repeat;
+*/
+
+}
+.whereweare
+{ 
+    background-image: url(data.jpg);
+    height: 500px;
+    padding-top:10%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top:0px; 
+
+    
+}
+.aboutwhere
+{  
+    margin-left:33%;
+    margin-right:33%; 
+    margin-top: 300px;
+       background-color:  #BDACA2;
+       background-size: 12em; 
+       background-repeat: no-repeat;
+       padding: 2em 1.2em;
+       text-align: center;
+}
+.zwt
+{ 
+    background-image: url(aboutproject.jpg);
+    height: 500px;
+    padding-top:10%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top:0px; 
+ 
+    
+}
+.aboutzwt
+{  
+    margin-left:33%;
+    margin-right:33%; 
+    margin-top: 300px;
+       background-color:  #BDACA2;
+       background-size: 12em; 
+       background-repeat: no-repeat;
+       padding: 2em 1.2em;
+       text-align: center;
+}
+
+   footer
+   
+   {  clear: both;
+       padding:1%;
+       background-color:black;
+       border-right: 3px solid #BDACA2; 
+       
+   }
+
+  
+  
+  
